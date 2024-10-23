@@ -2,12 +2,13 @@
 set -ex
 
 DOWNLOAD_URL=$1
+echo $1
 DOWNLOADED_FILE_NAME=$(basename $1)
 FILE_CHECKSUM=$2
 
 # Find and verify checksum
 verify_checksum() {
-    local checksum=`sha256sum $1 | awk '{print $1}'`
+    local checksum=$(sha256sum $1 | awk '{print $1}')
     if [[ $checksum == $2 ]]
     then
         echo "Checksum verified!"
