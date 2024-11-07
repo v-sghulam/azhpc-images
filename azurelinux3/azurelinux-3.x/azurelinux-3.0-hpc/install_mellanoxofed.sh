@@ -41,10 +41,10 @@ tdnf install -y <pcakage-url> bison \
 
 # Install Infiniband-diags and deps
 #tdnf install -y <pcakage-url> libibumad-2407mlnx52-1.azl3.2407061.x86_64.rpm
-tdnf install -y <pcakage-url> <pcakage-url> libibumad-2407mlnx52-1.azl3.2407061.x86_64.rpm
-tdnf install -y <pcakage-url> <pcakage-url> infiniband-diags-2407mlnx52-1.azl3.2407061.x86_64.rpm
-tdnf install -y <pcakage-url> <pcakage-url>  libibverbs-2407mlnx52-1.azl3.2407061.x86_64.rpm
-tdnf install -y <pcakage-url> libibverbs-utils-2407mlnx52-1.azl3.2407061.x86_64.rpm
+tdnf install -y <pcakage-url>  libibumad-2407mlnx52-1.azl3.2407061.x86_64.rpm
+tdnf install -y <pcakage-url>  infiniband-diags-2407mlnx52-1.azl3.2407061.x86_64.rpm
+tdnf install -y <pcakage-url>  libibverbs-2407mlnx52-1.azl3.2407061.x86_64.rpm
+tdnf install -y <pcakage-url>  libibverbs-utils-2407mlnx52-1.azl3.2407061.x86_64.rpm
 
 tdnf install -y <pcakage-url> ofed-scripts-24.07-OFED.24.07.0.6.1.x86_64.rpm
 tdnf install -y <pcakage-url> mlnx-tools-24.07-0.2407061.x86_64.rpm
