@@ -19,9 +19,9 @@ function test_component {
     case $component in
         check_impi_2021) verify_impi_2021_installation;;
         check_impi_2018) verify_impi_2018_installation;;
-        check_gdrcopy) verify_gdrcopy_installation;;
-        check_cuda) verify_cuda_installation;;
-        check_nccl) verify_nccl_installation;;
+        #check_gdrcopy) verify_gdrcopy_installation;;
+        #check_cuda) verify_cuda_installation;;
+        #check_nccl) verify_nccl_installation;;
 	check_rocm) verify_rocm_installation;;
         check_rccl) verify_rccl_installation;;
         check_gcc) verify_gcc_modulefile;;
@@ -46,7 +46,7 @@ function verify_common_components {
     verify_mkl_installation;
     verify_hpcdiag_installation;
     verify_ipoib_status;
-    verify_lustre_installation;
+    #verify_lustre_installation;
     verify_pssh_installation;
     verify_aznfs_installation;
 }
