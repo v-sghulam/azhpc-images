@@ -26,7 +26,7 @@ else
    git clone https://github.com/Azure/azurehpc-health-checks.git
    pushd azurehpc-health-checks
    # Build docker image for AMD while waiting to be published on MCR
-   ./dockerfile/build_image.sh rocm
+   ./dockerfile/pull-image-mcr.sh rocm
 
    popd
 fi
