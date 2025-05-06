@@ -68,7 +68,7 @@ make install
 
 
 
-pushd /home/packer/azurelinux-hpc/azurelinux/azurelinux-3.x/azurelinux-3.0-hpc
+pushd ~/azurelinux/azurelinux-3.x/azurelinux-3.0-hpc
 
 echo "INSTALLED RCCL!! ${RCCL_VERSION}"
 $COMMON_DIR/write_component_version.sh "RCCL" $RCCL_VERSION
