@@ -25,6 +25,7 @@ if [ "${GPU_PLAT}" = "NVIDIA" ]; then
 else
    git clone https://github.com/Azure/azurehpc-health-checks.git
    pushd azurehpc-health-checks
+   chmod +x ./dockerfile/pull-image-mcr.sh
    # Build docker image for AMD while waiting to be published on MCR
    ./dockerfile/pull-image-mcr.sh rocm
 
