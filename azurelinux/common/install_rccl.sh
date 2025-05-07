@@ -68,7 +68,7 @@ make install
 
 
 
-pushd /home/packer/azhpc-images/azurelinux/common
+pushd /home/packer/azhpc-images/common/
 
 echo "INSTALLED RCCL!! ${RCCL_VERSION}"
 $COMMON_DIR/write_component_version.sh "RCCL" $RCCL_VERSION
