@@ -39,8 +39,17 @@ tdnf install -y rocm-smi-lib rocm-core rocm-device-libs rocm-llvm rocm-validatio
 usermod -a -G render $(logname)
 usermod -a -G video $(logname)
 
+
+#Grant access to GPUs to all users via udev rules
+cat <<'EOF' > /etc/udev/rules.d/70-amdgpu.rules
+KERNEL=="kfd", MODE="0666"
+SUBSYSTEM=="drm", KERNEL=="renderD*", MODE="0666"
+EOF
+
+udevadm control --reload-rules && sudo udevadm trigger
+
 #Update cloud.cfg to add the first user to the render group
-sed -i 's/groups: \[.*/groups: \[render, adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video\]/' /etc/cloud/cloud.cfg
+#sed -i 's/groups: \[.*/groups: \[render, adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video\]/' /etc/cloud/cloud.cfg
 
 #add future new users to the render and video groups.
 # echo 'ADD_EXTRA_GROUPS=1' | tee -a /etc/adduser.conf
