@@ -12,7 +12,8 @@ tdnf install -y libstdc++-devel
 # tdnf remove -y rccl
 
 pushd ~
-git clone https://github.com/rocm/rccl
+#git clone https://github.com/rocm/rccl
+git clone --branch rocm-6.2.2 https://github.com/ROCm/rccl.git
 popd
 mkdir ~/rccl/build
 pushd ~/rccl/build
