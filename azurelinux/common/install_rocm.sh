@@ -11,10 +11,11 @@ tdnf -y install kernel-drivers-gpu-$(uname -r)
 # tdnf -y install amdgpu-firmware \
 #                 amdgpu \
 #                 amdgpu-headers
-tdnf -y install https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-6.10.5.60302_2109964-1_6.6.78.1.3.azl3.x86_64.rpm \
- https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-firmware-6.10.5.60302_2109964-1.azl3.noarch.rpm  \
- https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-headers-6.10.5.60302_2109964-1.azl3.noarch.rpm
+# tdnf -y install https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-6.10.5.60302_2109964-1_6.6.78.1.3.azl3.x86_64.rpm \
+#  https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-firmware-6.10.5.60302_2109964-1.azl3.noarch.rpm  \
+#  https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-headers-6.10.5.60302_2109964-1.azl3.noarch.rpm
                
+tdnf -y install https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-6.8.5.60202_2078359-7_6.6.85.1.2.azl3.x86_64.rpm https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-firmware-6.8.5.60202_2078359-7.azl3.noarch.rpm  https://packages.microsoft.com/azurelinux/3.0/prod/amd/x86_64/Packages/a/amdgpu-headers-6.8.5.60202_2078359-7.azl3.noarch.rpm 
 
 
 rocm_metadata=$(get_component_config "ROCM")
