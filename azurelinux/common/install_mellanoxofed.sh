@@ -102,7 +102,7 @@ tdnf install -y libibumad \
                 https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/m/mlnx-ofa_kernel-modules-24.10-13.azl3.x86_64.rpm \
                 https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/m/mlnx-ofa_kernel-devel-24.10-13.azl3.x86_64.rpm \
                 https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/m/mlnx-ofa_kernel-source-24.10-13.azl3.x86_64.rpm \
-                https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/m/mft_kernel-4.30.0-11.azl3.x86_64.rpm \
+                https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/m/mft_kernel-4.30.0-13.azl3.x86_64.rpm \
                 mstflint \
                 https://packages.microsoft.com/azurelinux/3.0/prod/base/x86_64/Packages/f/fwctl-24.10-13.azl3.x86_64.rpm  \
                 ibacm \
