@@ -229,7 +229,7 @@
     },
     "RCCL": {
         "common": {
-            "version": "2.20.5"
+            "version": "2.23.4"
         }
     },
     "intel_one_mkl": {
