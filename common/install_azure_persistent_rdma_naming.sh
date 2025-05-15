@@ -75,6 +75,4 @@ EOF
 systemctl enable azure_persistent_rdma_naming.service
 systemctl start azure_persistent_rdma_naming.service
 
-sudo mv 60-rdma-persistent-naming.rules 60-rdma-persistent-naming.rules.bck
-
 $COMMON_DIR/install_azure_persistent_rdma_naming_monitor.sh      
